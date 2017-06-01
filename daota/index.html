@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="css/css.css"/>
+    <script src="bin/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<header></header>
+<!--------------------->
+<section class="box">
+    <section class="wrap1">
+        <div class="video">
+            <video autoplay loop class="video_in">
+                <source src="video/monkeyking_2.mp4" type="video/mp4">
+            </video>
+
+        </div>
+            <div class="content">
+                <div class="top">
+                    <a href="#">
+                        <img src="img/img-logo-dark.png" alt="logo"/>
+                    </a>
+                    <ul>
+                        <li>
+                            <p>DOTA2官网</p>
+                            <span> HOME</span>
+                        </li>
+                        <li>
+                            <p>资料站</p>
+                            <span> DATA</span>
+                        </li>
+                        <li>
+                            <p>视频站</p>
+                            <span> VIDEO</span>
+                        </li>
+                        <li>
+                            <p> 玩家工坊</p>
+                            <span>WORKSHOP</span>
+                        </li>
+                        <li>
+                            <p>客服中心</p>
+                            <span>SERVICE</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="center">
+                    <div class="center1">
+                        <ul>
+                            <li>进入官网</li>
+                            <li>游戏下载</li>
+                            <li>用户注册</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li class="ll">
+                            <p>第二届DOTA2亚洲邀请赛</p>
+                            <img src="img/bottom_1.jpg" alt="" class="img1"/>
+                        </li>
+                        <li class="ll">
+                            <p>TI7官方周边全球同步发售</p>
+                            <img src="img/bottom_2.jpg" alt=""class="img1"/>
+                        </li>
+                        <li style="margin-right: 0" class="ll">
+                            <p>DOTA2开启7.00新纪元</p>
+                            <img src="img/bottom_3.jpg" alt=""class="img1"/>
+
+                        </li>
+                    </ul>
+                </div>
+
+        </div>
+    </section>
+    <section class="wrap2">
+        <div class="in_wrap2">
+            <div class="in">
+                <div class="t1">
+                    <a href="#" class="t1_1" style="opacity: 1"></a>
+                    <div class="cover1" style="opacity: 0"></div>
+                </div>
+                <div class="t2">
+                    <a href="#" class="t2_2" style="opacity: 1"></a>
+                    <div class="cover2" style="opacity: 0"></div>
+                </div>
+                <div class="new"></div>
+                <div class="old"></div>
+            </div>
+        </div>
+    </section>
+</section>
+<!---------------------->
+<footer></footer>
+<script>
+    $(function(){
+
+        $(".ll").eq(0).mouseenter(function(){
+            $(".img1").eq(0).attr("src","img/bottom_1_1.jpg")
+            $(this).css({top:"-20px"})
+            $(this).children("p").css({color:"white"})
+        });
+        $(".ll").eq(0).mouseleave(function(){
+            $(".img1").eq(0).attr("src","img/bottom_1.jpg")
+            $(this).css({top:"0"})
+            $(this).children("p").css({color:"#ffd943"})
+        });
+
+        $(".ll").eq(1).mouseenter(function(){
+            $(".img1").eq(1).attr("src","img/bottom_2_2.jpg")
+            $(this).css({top:"-20px"})
+            $(this).children("p").css({color:"white"})
+        });
+        $(".ll").eq(1).mouseleave(function(){
+            $(".img1").eq(1).attr("src","img/bottom_2.jpg")
+            $(this).css({top:"0"})
+            $(this).children("p").css({color:"#ffd943"})
+        });
+
+        $(".ll").eq(2).mouseenter(function(){
+            $(".img1").eq(2).attr("src","img/bottom_3_3.jpg")
+            $(this).css({top:"-20px"})
+            $(this).children("p").css({color:"white"})
+        });
+        $(".ll").eq(2).mouseleave(function(){
+            $(".img1").eq(2).attr("src","img/bottom_3.jpg")
+            $(this).css({top:"0"})
+            $(this).children("p").css({color:"#ffd943"})
+        });
+/*===========================================================*/
+        $(".t1").mouseover(function(){
+            $(".t1_1").css({opacity: 0});
+            $(".cover1").css({opacity: 1,top:"-10px"});
+            $(".new").css({opacity: 1});
+            $(".old").css({opacity: 0});
+            console.log(1)
+        })
+        $(".t1").mouseout(function(){
+            $(".t1_1").css({opacity: 1});
+            $(".cover1").css({opacity: 0,top:"0px"});
+            console.log(1)
+        })
+        $(".t2").mouseover(function(){
+            $(".t2_2").css({opacity: 0});
+            $(".cover2").css({opacity: 1,top:"-255px"});
+            $(".new").css({opacity: 0});
+            $(".old").css({opacity: 1});
+        })
+        $(".t2").mouseout(function(){
+            $(".t2_2").css({opacity: 1});
+            $(".cover2").css({opacity: 0,top:"-245px"});
+        })
+
+    })
+
+</script>
+</body>
+</html>

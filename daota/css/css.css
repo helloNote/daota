@@ -1,0 +1,310 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    margin: 0;
+    padding: 0;
+    min-width: 1400px;
+    position: relative;
+    font-family: "Microsoft YaHei", "å®‹ä½“",Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width:1448px){
+   .box{
+       min-width: 1024px;
+   }
+}
+.wrap1{
+    background: url("../img/cover161129_bg_001.jpg") 50% 0 no-repeat;
+    border-bottom: 1px solid #570605;
+    height: auto;
+    min-height: 698px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.video_in{
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.content{
+    margin: auto;
+    width:1400px;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+@media screen and (max-width:1448px){
+    .content{
+        width:1240px;
+        position: absolute;
+    }
+}
+.content .top{
+    padding: 22px 20px 20px 10px;
+}
+.content .top ul{
+    list-style: none;
+    float: right;
+}
+.content .top ul li{
+    float: left;
+    text-align: center;
+    padding: 0 30px;
+    cursor: pointer;
+}
+.content .top ul li p{
+    color:#ccc ;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+}
+.content .top ul li:hover p{
+    color: #EECA3D;
+}
+.content .top ul li:hover span{
+    color: #EECA3D;
+}
+
+.content .top ul li span{
+    color:#777 ;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.content .center{
+   padding:80px 100px 100px 0;
+}
+@media screen and (max-width:1448px){
+    .content .center{
+        padding:10px 30px 30px 10px;
+    }
+}
+.content .center .center1{
+    background: url("../img/2.png")no-repeat;
+    width: 620px;
+    height: 224px;
+    padding-top: 168px;
+    padding-left: 142px;
+    box-sizing: border-box;
+}
+@media screen and (max-width:1448px){
+    .content .center .center1{
+        background: url("../img/3.png")no-repeat;
+        width: 500px;
+        height: 181px;
+        padding-top: 132px;
+        padding-left: 118px;
+        box-sizing: border-box;
+        float: left;
+    }
+}
+.content .center .center1 ul{
+     list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+.content .center .center1 ul li{
+   float: left;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 40px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.content .center .center1 ul li:hover{
+    color: #EECA3D;
+}
+@media screen and (max-width:1448px){
+    .content .center .center1 ul li{
+        margin-right: 20px;
+    }
+}
+.content .bottom{
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    padding: 0 20px 0 10px;
+}
+ .bottom ul{
+    list-style: none;
+    /* overflow: hidden;*/
+     height: 280px;
+     margin: 0;
+     padding: 0;
+}
+@media screen and (max-width:1448px){
+    .bottom ul{
+       height: 228px;
+    }
+}
+ .bottom ul li{
+    float: left;
+    width: 387px;
+    height: 279px;
+    margin-right: 99px;
+    border: 1px solid #570605;
+    background: url("../img/bg.jpg")no-repeat 0 -212px;
+     padding-top: 1px;
+     text-align: center;
+     cursor: pointer;
+     position: relative;
+     top: 0;
+     transition: all 0.4s linear;
+}
+@media screen and (max-width:1448px){
+     .bottom ul li{
+        width: 302px;
+        height: 228px;
+        margin-right: 146px;
+    }
+}
+.bottom ul li p{
+    font-size: 24px;
+    color: #ffd943;
+    margin: 18px;
+}
+@media screen and (max-width:1448px){
+    .bottom ul li p{
+        font-size: 20px;
+    }
+}
+.bottom ul li >img{
+    width: 100%;
+}
+.wrap2{
+    height: 698px;
+    overflow: hidden;
+    background: url("../img/wrap2_bg.jpg")no-repeat;
+}
+/*===================================================*/
+.in_wrap2{
+    width: 1400px;
+    margin: auto;
+}
+@media screen and (max-width:1448px){
+    .in_wrap2{
+        width: 1240px;
+    }
+}
+.in{
+    position: relative;
+    padding:220px 20px 20px 20px;
+}
+.in .t1 a{
+    width: 450px;
+    height: 245px;
+    background: url("../img/new1_t.png")no-repeat;
+    float: left;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    z-index: 50;
+    transition: all 0.2s linear;
+}
+@media screen and (max-width:1448px){
+    .in .t1 a{
+        width: 369px;
+        height: 236px;
+        background: url("../img/new_t.png")no-repeat;
+        float: left;
+    }
+}
+.in .t1 .cover1{
+    width: 450px;
+    height: 245px;
+    background: url("../img/new1_t1.png")no-repeat;
+    float: left;
+    position: relative;
+    left: -450px;
+    cursor: pointer;
+    z-index: 50;
+    transition: all 0.2s linear;
+}
+@media screen and (max-width:1448px){
+    .in .t1 .cover1{
+        width: 369px;
+        height: 236px;
+        background: url("../img/new_t1.png")no-repeat;
+        float: left;
+        position: relative;
+        left: -369px;
+    }
+}
+.in .t2 a{
+    width: 450px;
+    height: 245px;
+    background: url("../img/old1_t.png")no-repeat;
+    float: right;
+    position: relative;
+    display: block;
+    z-index: 50;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+@media screen and (max-width:1448px){
+    .in .t2 a{
+        width: 369px;
+        height: 236px;
+        background: url("../img/old_t.png")no-repeat;
+        float: right;
+    }
+}
+.in .t2 .cover2{
+    width: 450px;
+    height: 245px;
+    background: url("../img/old1_t1.png")no-repeat;
+    float: right;
+    position: relative;
+    top: -245px;
+    z-index: 50;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+@media screen and (max-width:1448px){
+    .in .t2 .cover2{
+        width: 369px;
+        height: 236px;
+        background: url("../img/old_t1.png")no-repeat;
+        float: right;
+        position: relative;
+        top: -236px;
+    }
+}
+.in .new{
+    background: url("../img/new.png")no-repeat;
+    width: 1200px;
+    height: 750px;
+    position: absolute;
+    top: -2px;
+    left: 60px;
+     opacity: 0;
+    transition: all 0.5s linear;
+}
+@media screen and (max-width:1448px){
+    .in .new{
+        left: -30px;
+    }
+}
+.in .old{
+    background: url("../img/old.png")no-repeat;
+    width: 1200px;
+    height: 750px;
+    position: absolute;
+    top: -2px;
+    left: 60px;
+    transition: all 0.5s linear;
+}
+@media screen and (max-width:1448px){
+    .in .old{
+        left: -130px;
+    }
+}
